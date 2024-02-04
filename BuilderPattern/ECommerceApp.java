@@ -86,7 +86,7 @@ public class ECommerceApp {
     public static void displayprogrammer() {
       System.out.println("\n \t\t-------------------> App Shuting Down <---------------\n");
       System.out.println("\t   #==============================================================#");		
-      System.out.println("\t   |                2023 @ Sharon Grace T. Hangaan                |");
+      System.out.println("\t   |                2024 @ Sharon Grace T. Hangaan                |");
       System.out.println("\t   |          Follow me in: https://github.com/SG-Hangaan         |");
       System.out.println("\t   |               Email: sharonygracehangaan@gmail.com           |");
       System.out.println("\t   #==============================================================#");	
