@@ -1,5 +1,4 @@
 package BuilderPattern;
-
 import java.util.*;
 
 public class ECommerceApp {
@@ -7,7 +6,10 @@ public class ECommerceApp {
 
         Scanner userInput = new Scanner(System.in);
 
-        header();
+        System.out.println("\n\t(============================ WELCOME TO ===============================)");
+        System.out.println("\t(=============== E-Commerce Application Registration Form! =============)");
+        System.out.println("\t-------------------------------------------------------------------------\n");
+        System.out.println("Please Enter your use details to Proceed...");
         System.out.println();
 
         String firstName = getInput("Enter your first name: ", "First name is required. Please enter your first name.", userInput);
@@ -42,15 +44,9 @@ public class ECommerceApp {
         }
 
         User user = new User.UserBuilder()
-                .lastName(lastName)
-                .phone(phone)
-                .firstName(firstName)
-                .age(age)
-                .address(address)
-                .email(email)
-                .build();
+                .lastName(lastName) .phone(phone) .firstName(firstName) .age(age)
+                .address(address) .email(email) .build();
 
-        
         System.out.println();
         System.out.println("\t(======================= User Information Details ======================)\n");
         System.out.println("First Name: " + user.firstName);
@@ -59,10 +55,9 @@ public class ECommerceApp {
         System.out.println("Address: " + user.address);
         System.out.println("Phone Number: " + user.phone);
         System.out.println("Age: " + user.age);
-        displayprogrammer();
+        System.out.println();
     }
 
-    
     private static String getInput(String prompt, String errorMessage, Scanner scanner) {
         String input;
         do {
@@ -73,24 +68,4 @@ public class ECommerceApp {
         } while (input.isEmpty());
         return input;
     }
-
-    public static void header() {
-		   
-        System.out.println("\n\t(============================ WELCOME TO ===============================)");
-        System.out.println("\t(=============== E-Commerce Application Registration Form! =============)");
-        System.out.println("\t-------------------------------------------------------------------------\n");
-        System.out.println("Please Enter your use details to Proceed...");
-    
-    } 
-
-    public static void displayprogrammer() {
-      System.out.println("\n \t\t-------------------> App Shuting Down <---------------\n");
-      System.out.println("\t   #==============================================================#");		
-      System.out.println("\t   |                2024 @ Sharon Grace T. Hangaan                |");
-      System.out.println("\t   |          Follow me in: https://github.com/SG-Hangaan         |");
-      System.out.println("\t   |               Email: sharonygracehangaan@gmail.com           |");
-      System.out.println("\t   #==============================================================#");	
-      System.exit(0);
-  }
-
 }
