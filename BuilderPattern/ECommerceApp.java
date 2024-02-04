@@ -9,9 +9,8 @@ public class ECommerceApp {
         System.out.println("\n\t(============================ WELCOME TO ===============================)");
         System.out.println("\t(=============== E-Commerce Application Registration Form! =============)");
         System.out.println("\t-------------------------------------------------------------------------\n");
-        System.out.println("Please Enter your use details to Proceed...");
-        System.out.println();
-
+        System.out.println("Please Enter your use details to Proceed...\n");
+    
         String firstName = getInput("Enter your first name: ", "First name is required. Please enter your first name.", userInput);
         String lastName = getInput("Enter your last name: ", "Last name is required. Please enter your last name.", userInput);
 
@@ -55,6 +54,7 @@ public class ECommerceApp {
         System.out.println("Address: " + user.address);
         System.out.println("Phone Number: " + user.phone);
         System.out.println("Age: " + user.age);
+        displayprogrammer();
         System.out.println();
     }
 
@@ -68,4 +68,13 @@ public class ECommerceApp {
         } while (input.isEmpty());
         return input;
     }
+
+    public static void displayprogrammer() {
+      System.out.println("\n \t\t------------------> App Shuting Down <----------------\n");
+      System.out.println("\t    #==============================================================#");		
+      System.out.println("\t    |                2024 @ Sharon Grace T. Hangaan                |");
+      System.out.println("\t    |          Follow me in: https://github.com/SG-Hangaan         |");
+      System.out.println("\t    |               Email: sharonygracehangaan@gmail.com           |");
+      System.out.println("\t    #==============================================================#");	
+  }
 }
